@@ -1,5 +1,5 @@
-<p-toolbar>
-  <div class="p-toolbar-group-start">
+<div class="container">
+  <div class="header-title">
     <h1 routerLink="/" style="margin-right: 3rem; color: mediumvioletred">PRINTIFY</h1>
     <a routerLink="/" class="p-toolbar-link" (touchend)="setColor($event, 'gray')" style="color: gray; text-decoration: none; margin-right: 2rem;" (mouseenter)="setHoverColor($event, 'mediumvioletred')" (mouseleave)="setHoverColor($event, 'gray')">
       Home
@@ -11,7 +11,7 @@
       Create
     </a>
   </div>
-  <div class="p-toolbar-group-end">
+  <div class="header-search">
     <span class="p-input-icon-left">
       <i class="pi pi-search"></i>
       <input pInputText type="text" placeholder="Search" style="margin-right: 2rem">
@@ -23,5 +23,6 @@
       <i class="pi pi-shopping-cart"></i>
     </a>
   </div>
-</p-toolbar>
+</div>
+<hr>
 

@@ -5,7 +5,8 @@ import { ToolbarModule } from 'primeng/toolbar';
 import { SplitButtonModule } from "primeng/splitbutton";
 import {TooltipModule} from "primeng/tooltip";
 import {TabViewModule} from "primeng/tabview";
-
+import { ColorPickerModule } from 'primeng/colorpicker';
+import {EditorModule} from "primeng/editor";
 
 @NgModule({
   declarations: [],
@@ -15,7 +16,9 @@ import {TabViewModule} from "primeng/tabview";
     ToolbarModule,
     SplitButtonModule,
     TooltipModule,
-    TabViewModule
+    TabViewModule,
+    ColorPickerModule,
+    EditorModule
 
   ]
 })
