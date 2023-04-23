@@ -1,0 +1,27 @@
+<p-toolbar>
+  <div class="p-toolbar-group-start">
+    <h1 routerLink="/" style="margin-right: 3rem; color: mediumvioletred">PRINTIFY</h1>
+    <a routerLink="/" class="p-toolbar-link" (touchend)="setColor($event, 'gray')" style="color: gray; text-decoration: none; margin-right: 2rem;" (mouseenter)="setHoverColor($event, 'mediumvioletred')" (mouseleave)="setHoverColor($event, 'gray')">
+      Home
+    </a>
+    <a routerLink="/catalog" class="p-toolbar-link" (touchend)="setColor($event, 'grey')" style="color: grey; text-decoration: none; margin-right: 2rem;" (mouseenter)="setHoverColor($event, 'mediumvioletred')" (mouseleave)="setHoverColor($event, 'grey')">
+      Catalog
+    </a>
+    <a routerLink="/create-design" class="p-toolbar-link" (touchend)="setColor($event, 'gray')" style="color: gray; text-decoration: none; margin-right: 1rem" (mouseenter)="setHoverColor($event, 'mediumvioletred')" (mouseleave)="setHoverColor($event, 'gray')">
+      Create
+    </a>
+  </div>
+  <div class="p-toolbar-group-end">
+    <span class="p-input-icon-left">
+      <i class="pi pi-search"></i>
+      <input pInputText type="text" placeholder="Search" style="margin-right: 2rem">
+    </span>
+    <a routerLink="/auth" class="p-toolbar-link" (touchend)="setColor($event, 'gray')" style="color: gray; text-decoration: none; margin-right: 2rem" (mouseenter)="setHoverColor($event, 'mediumvioletred')" (mouseleave)="setHoverColor($event, 'gray')">
+      <i class="pi pi-custom pi-user"></i>
+    </a>
+    <a routerLink="/cart" class="p-toolbar-link" (touchend)="setColor($event, 'gray')" style="color: gray; text-decoration: none" (mouseenter)="setHoverColor($event, 'mediumvioletred')" (mouseleave)="setHoverColor($event, 'gray')">
+      <i class="pi pi-shopping-cart"></i>
+    </a>
+  </div>
+</p-toolbar>
+
